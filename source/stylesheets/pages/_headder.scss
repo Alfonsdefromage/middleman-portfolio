@@ -1,8 +1,9 @@
 .headder {
-  background-color: $light-blue;
+  background-color: $black;
   height: 40vh;
-  border-bottom: dashed 4px $neon-yellow;
   font-family: "Reddit Sans Condensed", sans-serif;
+  color: $white-smoke;
+
 
   img {
     height: 200px;
@@ -10,7 +11,7 @@
     margin-left: 88px;
     border-radius: 30px;
     object-fit: cover;
-    box-shadow: 10px 10px 0 $neon-yellow, -10px -10px 0 $red;
+    box-shadow: 5px 5px 0 $light-blue, -5px -5px 0 $red;
   }
 }
 

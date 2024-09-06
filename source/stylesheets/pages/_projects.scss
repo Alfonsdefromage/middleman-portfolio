@@ -1,0 +1,24 @@
+.projects {
+  background-color: #F1EDEE;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    img {
+      padding: 8px;
+      height: 100%;
+      border-bottom-left-radius: 25px;
+      width: 100%;
+      object-fit: cover;
+    }
+}
+
+.about-project {
+  font-family: "Reddit Sans Condensed", sans-serif;
+  color: $black;
+  padding: 16px;
+}
+
+.link-button {
+  padding: 8px;
+  background-color: $lime;
+}

@@ -1,32 +1,19 @@
-<div class="row my-5">
-  <div class="col-12">
-    <div class="container">
-      <div id="projects">
-        <h2> Projects</h2>
-        <div class="cards">
-          <% data.projects.each do |project| %>
-            <div class="card-product">
-              <%= image_tag project.image, alt: "project image" %>
-              <div class="card-product-infos w-100">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h2><%= project.name %></h2>
-                  <div class="card-links">
-                    <% link_to project.github, class: 'external-link', target: '_blank' do %>
-                      <i class="fa-brands fa-github"></i>
-                    <% end %>
-                    <% if project.online?  %>
-                      <% link_to project.url, class: 'external-link', target: '_blank' do %>
-                        <i class="fas fa-external-link-alt"></i>
-                      <% end %>
-                    <% end %>
-                  </div>
-                </div>
-                <p><%= project.description %></p>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
+<div class="projects my-5">
+  <div class="row col-12">
+    <div class="col-6">
+      <%= image_tag "Plans-Tonight-Show-1.png", alt: "Plans tonight logo" %>
     </div>
+    <div class="col-6">
+      <div class="about-project">
+        <h1>Plans Tonight</h1>
+        <h5>Role: Lead Developer</h5>
+        <p> Plans Tonight is the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp.
+          <br>
+          This app is designed to reduce the headache of chosing a place to go out with friends. A user can initialize a plan by choosing a date and time, invite friends to vote for the mood, and alcohol type they prefer.
+          <br>
+          Based on these choices, the app will choose a place to go out. </p>
+      </div>
+    </col-12>
   </div>
+</div>
 </div>
