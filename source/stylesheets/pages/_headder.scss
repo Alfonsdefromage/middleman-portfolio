@@ -1,0 +1,19 @@
+.headder {
+  background-color: $light-blue;
+  height: 40vh;
+  border-bottom: dashed 4px $neon-yellow;
+  font-family: "Reddit Sans Condensed", sans-serif;
+
+  img {
+    height: 200px;
+    margin: 32px;
+    margin-left: 88px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 10px 10px 0 $neon-yellow, -10px -10px 0 $red;
+  }
+}
+
+.headder-description {
+margin: 32px;
+}
