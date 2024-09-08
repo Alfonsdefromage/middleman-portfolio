@@ -1,19 +1,37 @@
 <div class="projects my-5">
+  <div class="col-12">
+    <h1>Projects</h1>
+  </div>
   <div class="row col-12">
     <div class="col-6">
       <%= image_tag "Plans-Tonight-Show-1.png", alt: "Plans tonight logo" %>
     </div>
     <div class="col-6">
       <div class="about-project">
-        <h1>Plans Tonight</h1>
-        <h5>Role: Lead Developer</h5>
+        <h2>Plans Tonight</h1>
+        <h6>Role: Lead Developer</h5>
         <p> Plans Tonight is the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp.
           <br>
           This app is designed to reduce the headache of chosing a place to go out with friends. A user can initialize a plan by choosing a date and time, invite friends to vote for the mood, and alcohol type they prefer.
           <br>
           Based on these choices, the app will choose a place to go out. </p>
+        <div class="buttons-align">
+          <div class="link-button d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-globe"></i><span>Visit</span>
+              <%= link_to "", "https://www.planstonight.lol", target: '_blank', class: 'button-social-link' %>
+            </div>
+          </div>
+          <div class="link-button d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="fa-brands fa-github-alt"></i><span>GitHub</span>
+              <%= link_to "", "https://github.com/Alfonsdefromage/plans_tonight", target: '_blank', class: 'button-social-link' %>
+            </div>
+          </div>
+        </div>
       </div>
-    </col-12>
-  </div>
+    </div>
+  </col-12>
+</div>
 </div>
 </div>
