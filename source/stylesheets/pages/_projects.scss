@@ -4,21 +4,55 @@
     border-bottom-left-radius: 25px;
 
     img {
-      padding: 8px;
-      height: 100%;
-      border-bottom-left-radius: 25px;
+      margin: 8px;
       width: 100%;
       object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      padding: 8px;
+    }
+
+    p {
+      color: $gray;
     }
 }
 
 .about-project {
   font-family: "Reddit Sans Condensed", sans-serif;
   color: $black;
-  padding: 16px;
+  margin-top: 24px;
 }
 
 .link-button {
-  padding: 8px;
-  background-color: $lime;
+  text-decoration: none;
+    padding: 8px;
+    background-color: $black;
+    border-radius: 4px;
+    color: $white-smoke;
+    position: relative;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    width: 100px;
+    align-items: center;
+    transition-duration: 0.3s;
+
+    span {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border: solid 1px $black;
+    }
+}
+
+.buttons-align {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 34px;
 }
