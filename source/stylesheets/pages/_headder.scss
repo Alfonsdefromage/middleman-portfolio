@@ -1,6 +1,6 @@
 .headder {
   background-color: $black;
-  height: 35vh;
+  height: auto;
   width: 100%;
   font-family: "Reddit Sans Condensed", sans-serif;
   color: $white-smoke;
@@ -13,12 +13,14 @@
 
 
   img {
-    height: 200px;
-    margin: 32px;
-    margin-left: 88px;
+    max-height: 200px;
+    min-height: 100px;
+    margin: 16px;
     border-radius: 30px;
     object-fit: cover;
     box-shadow: 5px 5px 0 $light-blue, -5px -5px 0 $red;
+    position: relative;
+    right: 0;
   }
 }
 
@@ -26,52 +28,57 @@
 margin: 16px;
 }
 
-@media only screen and (max-width: 1023px) {
-  .headder {
-    height: 24vh;
-    width: 100%;
-
-    img {
-      height: 150px;
-      margin-left: 8px;
-    }
-  }
-
-
-  .headder-description {
-    margin: 24px;
-  }
+.headder-items {
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .headder {
-    height: 20vh;
-    width: 100%;
+// @media only screen and (min-width: 1023px) {
+//   .headder {
 
-    img {
-      height: 200px;
-      margin-left: 8px;
-    }
-  }
-
-
-  .headder-description {
-    margin: 24px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .headder {
-    width: 100%;
-
-    img {
-      height: 115px;
-      margin-left: 16px;
-    }
-  }
+//     img {
+//       height: 150px;
+//       margin-left: 8px;
+//     }
+//   }
+// }
 
 
-  .headder-description {
-    font-size: 12px;
-  }
-}
+//   .headder-description {
+//     margin: 24px;
+//   }
+// }
+
+// @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+//   .headder {
+//     height: 20vh;
+//     width: 100%;
+
+//     img {
+//       height: 200px;
+//       margin-left: 8px;
+//     }
+//   }
+
+
+//   .headder-description {
+//     margin: 24px;
+//   }
+// }
+
+// @media only screen and (max-width: 375px) {
+//   .headder {
+//     width: 100%;
+
+//     img {
+//       height: 115px;
+//       margin-left: 16px;
+//     }
+//   }
+
+
+//   .headder-description {
+//     font-size: 12px;
+//   }
+// }
