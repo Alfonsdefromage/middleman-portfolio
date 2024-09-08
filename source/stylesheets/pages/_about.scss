@@ -14,11 +14,16 @@
   p {
     color: $gray;
   }
+
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 .about-me {
   font-family: "Reddit Sans Condensed", sans-serif;
   color: $black;
-  margin-left: 48px;
   padding: 16px;
 }

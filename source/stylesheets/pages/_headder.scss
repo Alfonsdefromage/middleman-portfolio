@@ -1,8 +1,15 @@
 .headder {
   background-color: $black;
-  height: 40vh;
+  height: 35vh;
+  width: 100%;
   font-family: "Reddit Sans Condensed", sans-serif;
   color: $white-smoke;
+
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
   img {
@@ -16,5 +23,55 @@
 }
 
 .headder-description {
-margin: 32px;
+margin: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .headder {
+    height: 24vh;
+    width: 100%;
+
+    img {
+      height: 150px;
+      margin-left: 8px;
+    }
+  }
+
+
+  .headder-description {
+    margin: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .headder {
+    height: 20vh;
+    width: 100%;
+
+    img {
+      height: 200px;
+      margin-left: 8px;
+    }
+  }
+
+
+  .headder-description {
+    margin: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .headder {
+    width: 100%;
+
+    img {
+      height: 115px;
+      margin-left: 16px;
+    }
+  }
+
+
+  .headder-description {
+    font-size: 12px;
+  }
 }

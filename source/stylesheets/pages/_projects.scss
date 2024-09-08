@@ -13,6 +13,9 @@
 
     h1 {
       padding: 8px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
     }
 
     p {
@@ -23,7 +26,7 @@
 .about-project {
   font-family: "Reddit Sans Condensed", sans-serif;
   color: $black;
-  margin-top: 24px;
+  padding: 8px;
 }
 
 .link-button {
@@ -38,6 +41,7 @@
     width: 100px;
     align-items: center;
     transition-duration: 0.3s;
+    border: solid 1px $black;
 
     span {
       margin-left: 4px;
