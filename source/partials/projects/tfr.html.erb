@@ -1,0 +1,30 @@
+<div class="row col-12 mb-5">
+  <div class="col-12 col-md-6">
+    <%= image_tag "Plans-Tonight-Show-1.png", alt: "Plans tonight logo" %>
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="about-project">
+      <h2>Tokyo Food Roulette</h1>
+      <h6>Single Project</h5>
+      <p> Inspired by a friend from Germany visiting Tokyo, I created this app to make searching for a place to eat in Tokyo more accessible for tourists.
+        <br>
+        This app scrapes the 楽天グルナビ page with the help of the Nokogiri gem in Rails, based on a location which the user enters in English, which automatically gets translated with the help of the DeepL API, and a food category. <br>
+        The first version was running with geolocation, however the free geocoding API's limit the usage quite fast, why I decided to switch to a translation in real time to ensure the page is running at every request. </p>
+    </div>
+    <div class="buttons-align">
+      <div class="link-button d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-globe"></i><span>Visit</span>
+          <%= link_to "", "https://tokyo-roulette-e6923320089a.herokuapp.com/", target: '_blank', class: 'button-social-link' %>
+        </div>
+      </div>
+      <div class="link-button d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-github-alt"></i><span>GitHub</span>
+          <%= link_to "", "https://github.com/Alfonsdefromage/tokyo_roulette", target: '_blank', class: 'button-social-link' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</col-12>
+</div>
