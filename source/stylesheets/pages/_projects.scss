@@ -62,6 +62,47 @@
     }
 }
 
+.link-button-disabled {
+  text-decoration: none;
+    padding: 8px;
+    background-color: $black;
+    border-radius: 4px;
+    color: $white-smoke;
+    position: relative;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    width: 100px;
+    align-items: center;
+    transition-duration: 0.3s;
+    border: solid 1px $black;
+    opacity: 0.5;
+
+    span {
+      margin-left: 4px;
+    }
+}
+
+.link-button-disabled:hover::after {
+  content: "Currently unavailable. Looking for a new host.";
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 1;
+  transition: 0.3s;
+  margin-bottom: 4px;
+}
+
+.link-button-disabled:hover::after {
+  opacity: 1;
+}
+
 .buttons-align {
   display: flex;
   justify-content: flex-end;
